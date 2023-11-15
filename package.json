@@ -12,6 +12,7 @@
     "@formkit/auto-animate": "^0.8.1",
     "@reduxjs/toolkit": "^1.9.7",
     "@types/react-html-parser": "^2.0.5",
+    "@types/react-transition-group": "^4.4.9",
     "antd": "^5.11.1",
     "moment": "^2.29.4",
     "next": "14.0.2",
