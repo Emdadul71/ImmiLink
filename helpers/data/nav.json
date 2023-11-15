@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Home",
+    "link": "/"
+  },
+  {
+    "title": "About Us",
+    "link": "/about-us"
+  },
+  {
+    "title": "Legal Professionals",
+    "link": "/advisors"
+  },
+  {
+    "title": "Knowledge",
+    "link": "/knowledge"
+  },
+  {
+    "title": "Membership",
+    "link": "/membership"
+  },
+  {
+    "title": "Pricing",
+    "link": "/pricing"
+  },
+  {
+    "title": "Blog",
+    "link": "/blog"
+  }
+]
