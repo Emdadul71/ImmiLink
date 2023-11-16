@@ -3,65 +3,38 @@ import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
-import CountryCard from "../country_card";
 import TestimonialCard from "../testimonial-card";
 
-const dataLocal = [
+const testimonialData = [
   {
-    title: "Australia",
+    name: "Cameron Williamson",
     imgSrc: "/images/country/australia-country.webp",
+    desc: "Aku cocok menggunakan produk night cream white secret dari wardah ini. Buat kulit wajahku terasa lem",
     url: "/country/study-in-australia",
-    hoverBackground:
-      "linear-gradient(180deg, rgba(65, 22, 213, 0) 38.5%, #4116D5 100%)",
   },
   {
-    title: "Canada",
+    name: "Cameron Williamson",
     imgSrc: "/images/country/canada-country.webp",
+    desc: "Aku cocok menggunakan produk night cream white secret dari wardah ini. Buat kulit wajahku terasa lem",
     url: "/country/study-in-canada",
-    hoverBackground:
-      "linear-gradient(180deg, rgba(49, 218, 212, 0) 38.5%, #31DAD4 100%)",
   },
   {
-    title: "Denmark",
+    name: "Cameron Williamson",
     imgSrc: "/images/country/denmark-country.jpg",
+    desc: "Aku cocok menggunakan produk night cream white secret dari wardah ini. Buat kulit wajahku terasa lem",
     url: "/country/study-in-denmark",
-    hoverBackground:
-      "linear-gradient(180deg, rgba(20, 245, 106, 0) 38.5%, #14F56A 100%)",
   },
   {
-    title: "Germany",
+    name: "Cameron Williamson",
     imgSrc: "/images/country/germany-country.webp",
+    desc: "Aku cocok menggunakan produk night cream white secret dari wardah ini. Buat kulit wajahku terasa lem",
     url: "/country/study-in-germany",
-    hoverBackground:
-      "linear-gradient(180deg, rgba(65, 22, 213, 0) 38.5%, #4116D5 100%)",
   },
   {
-    title: "Ireland",
+    name: "Cameron Williamson",
     imgSrc: "/images/country/ireland-country.webp",
+    desc: "Aku cocok menggunakan produk night cream white secret dari wardah ini. Buat kulit wajahku terasa lem",
     url: "/country/study-in-ireland",
-    hoverBackground:
-      "linear-gradient(180deg, rgba(20, 245, 106, 0) 38.5%, #14F56A 100%)",
-  },
-  {
-    title: "Japan",
-    imgSrc: "/images/country/japan-country.webp",
-    url: "/country/study-in-japan",
-    hoverBackground:
-      "linear-gradient(180deg, rgba(252, 106, 49, 0) 38.5%, #FC6A31 100%)",
-  },
-  {
-    title: "The USA",
-    imgSrc: "/images/country/usa-country.webp",
-    url: "country/study-in-the-usa",
-    hoverBackground:
-      "linear-gradient(180deg, rgba(20, 245, 106, 0) 38.5%, #14F56A 100%)",
-  },
-  {
-    title: "The UK",
-    imgSrc: "/images/country/uk-country.webp",
-    url: "/country/study-in-the-uk",
-    hoverBackground:
-      "linear-gradient(180deg, rgba(49, 218, 212, 0) 38.5%, #31DAD4 100%)",
   },
 ];
 
@@ -189,7 +162,7 @@ const TestimonialCaresoul = () => {
         </div>
         <div className="lg:mr-[-26vw] overflow-hidden pt-[60px] mt-10 ">
           <Slider {...settings}>
-            {dataLocal.map((item, i) => {
+            {testimonialData.map((item, i) => {
               return (
                 <TestimonialCard
                   data={item}

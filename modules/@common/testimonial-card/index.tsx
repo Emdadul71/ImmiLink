@@ -6,6 +6,7 @@ interface propTypes {
   classes?: {
     root?: any;
   };
+  data?: any;
 }
 const TestimonialCard = ({ classes }: propTypes) => {
   return (

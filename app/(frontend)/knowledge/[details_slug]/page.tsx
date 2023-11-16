@@ -1,4 +1,4 @@
-import BlogDetails from "@/modules/blog/details";
+import BlogDetails from "@/modules/knowledge/details";
 import React from "react";
 
 const BlogDetailsPage = () => {

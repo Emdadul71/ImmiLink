@@ -71,7 +71,7 @@ const Header = () => {
             {navData && navData?.length > 0 && (
               <nav className="hidden lg:block font-medium">
                 <ul className="flex items-center">
-                  {navData?.map((item, index) => {
+                  {navData?.map((item: any, index: any) => {
                     let p: any;
                     if (item.link == path && item.link != "/#") {
                       p = true;
