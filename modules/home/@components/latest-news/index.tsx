@@ -5,6 +5,7 @@ import { HiOutlineArrowSmRight } from "react-icons/hi";
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
 import TestimonialCard from "@/modules/@common/testimonial-card";
 import BlogCard from "@/modules/knowledge/@components/blog-card";
+import Link from "next/link";
 
 const blogData = [
   {
@@ -183,7 +184,9 @@ const LatestNews = () => {
       <div className="container ">
         <div className="flex justify-between items-center mb-[-48px] lg:mb-[-70px]">
           <h2 className="text-h1 mb-0">Latest News</h2>
-          <p className="text-lg mb-0">All News</p>
+          <Link href="/news" className="text-lg mb-0">
+            All News
+          </Link>
         </div>
         <div className="lg:mr-[-26vw] overflow-hidden pt-[60px] mt-10 ">
           <Slider {...settings}>
