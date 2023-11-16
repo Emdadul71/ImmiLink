@@ -90,7 +90,10 @@ const BlogCategory = () => {
               <p className="text-secondary font-semibold">Topics</p>
               <ul className="flex flex-col gap-[12px]">
                 <li>
-                  <Link href="#" className="flex items-start gap-1 mb-3">
+                  <Link
+                    href="/knowledge/category/canada-citizenship"
+                    className="flex items-start gap-1 mb-3"
+                  >
                     <GoPlus className="font-bold" />
                     <span className="text-sm font-bold">
                       Canada Citizenship
@@ -98,7 +101,10 @@ const BlogCategory = () => {
                   </Link>
                   <ul className="flex flex-col gap-3 pl-5">
                     <li>
-                      <Link href="#" className="flex items-start gap-1">
+                      <Link
+                        href="/knowledge/category/canada-citizenship"
+                        className="flex items-start gap-1"
+                      >
                         <GoPlus className="font-bold" />
                         <span className="text-sm font-bold">
                           Canada Citizenship
@@ -106,7 +112,10 @@ const BlogCategory = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="flex items-start gap-1">
+                      <Link
+                        href="/knowledge/category/canada-citizenship"
+                        className="flex items-start gap-1"
+                      >
                         <GoPlus className="font-bold" />
                         <span className="text-sm font-bold">
                           Canada Citizenship
@@ -116,7 +125,10 @@ const BlogCategory = () => {
                   </ul>
                 </li>
                 <li>
-                  <Link href="#" className="flex items-start gap-1">
+                  <Link
+                    href="/knowledge/category/skilled-immigration-programs"
+                    className="flex items-start gap-1"
+                  >
                     <GoPlus className="font-bold" />
                     <span className="text-sm font-bold">
                       Skilled Immigration programs
@@ -124,7 +136,10 @@ const BlogCategory = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="flex items-start gap-1">
+                  <Link
+                    href="/knowledge/category/canada-citizenship"
+                    className="flex items-start gap-1"
+                  >
                     <GoPlus className="font-bold" />
                     <span className="text-sm font-bold">
                       Family / spousal sponsorship
@@ -132,7 +147,10 @@ const BlogCategory = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="flex items-start gap-1">
+                  <Link
+                    href="/knowledge/category/canada-citizenship"
+                    className="flex items-start gap-1"
+                  >
                     <GoPlus className="font-bold" />
                     <span className="text-sm font-bold">
                       Parents and Grandparents Program (PGP)
@@ -140,7 +158,10 @@ const BlogCategory = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="flex items-start gap-1">
+                  <Link
+                    href="/knowledge/category/canada-citizenship"
+                    className="flex items-start gap-1"
+                  >
                     <GoPlus className="font-bold" />
                     <span className="text-sm font-bold">
                       Admission and Study Permit
@@ -148,13 +169,19 @@ const BlogCategory = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="flex items-start gap-1">
+                  <Link
+                    href="/knowledge/category/canada-citizenship"
+                    className="flex items-start gap-1"
+                  >
                     <GoPlus className="font-bold" />
                     <span className="text-sm font-bold">Open Work Permit</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="flex items-start gap-1">
+                  <Link
+                    href="/knowledge/category/canada-citizenship"
+                    className="flex items-start gap-1"
+                  >
                     <GoPlus className="font-bold" />
                     <span className="text-sm font-bold">
                       Start up visa program
@@ -162,7 +189,10 @@ const BlogCategory = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="flex items-start gap-1">
+                  <Link
+                    href="/knowledge/category/canada-citizenship"
+                    className="flex items-start gap-1"
+                  >
                     <GoPlus className="font-bold" />
                     <span className="text-sm font-bold">Visitor visa</span>
                   </Link>

@@ -1,7 +1,8 @@
+import Pricing from "@/modules/pricing";
 import React from "react";
 
-const Membership = () => {
-  return <div>Membership</div>;
+const PricingPage = () => {
+  return <Pricing />;
 };
 
-export default Membership;
+export default PricingPage;

@@ -1,4 +1,7 @@
 "use client";
+
+import React, { useEffect } from "react";
+import { AiOutlineClose } from "react-icons/ai";
 import { CSSTransition } from "react-transition-group";
 
 const Drawer = (props: any) => {

@@ -7,7 +7,7 @@ interface propsType {
 }
 const AdvisorCard = ({ data }: propsType) => {
   return (
-    <Link href="#" className="flex flex-col group">
+    <Link href={data?.slug} className="flex flex-col group">
       <div>
         <Image
           src={data?.imgSrc}

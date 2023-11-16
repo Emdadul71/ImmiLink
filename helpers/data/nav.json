@@ -20,11 +20,7 @@
     "link": "/membership"
   },
   {
-    "title": "Pricing",
-    "link": "/pricing"
-  },
-  {
-    "title": "Blog",
-    "link": "/blog"
+    "title": "News",
+    "link": "/news"
   }
 ]

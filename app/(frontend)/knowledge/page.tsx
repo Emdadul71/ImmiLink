@@ -1,7 +1,8 @@
+import KnowledgeLanding from "@/modules/knowledge/landing";
 import React from "react";
 
-const Knowledge = () => {
-  return <div>Knowledge</div>;
+const BlogLandingPage = () => {
+  return <KnowledgeLanding />;
 };
 
-export default Knowledge;
+export default BlogLandingPage;

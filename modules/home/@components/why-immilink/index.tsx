@@ -6,7 +6,7 @@ const WhyImmilink = () => {
   return (
     <section>
       <div className="container">
-        <h2 className="text-h2">Why Immilink</h2>
+        <h2 className="text-h1 mb-10">Why Immilink</h2>
         <div className="flex flex-col lg:flex-row gap-5 lg:gap-0">
           <Image
             src="/images/home/why-immi.png"
@@ -16,7 +16,7 @@ const WhyImmilink = () => {
             className="object-cover z-[-1]"
             priority
           />
-          <div className="flex flex-col gap-5  lg:gap-[40px] p-[60px] bg-black lg:mt-[100px] lg:-mb-[50px] lg:-ml-[50px] max-w-[570px] w-full z-10 max-h-[600px]">
+          <div className="flex flex-col gap-5  lg:gap-[40px] p-[60px] bg-secondary lg:mt-[100px] lg:-mb-[50px] lg:-ml-[50px] max-w-[570px] w-full z-10 max-h-[600px]">
             <h2 className="text-white mb-0 line-clamp-3">
               Create stunning websites and landing pages in minutes!
             </h2>

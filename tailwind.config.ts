@@ -23,7 +23,9 @@ const config: Config = {
         body: "#575757",
       },
       fontSize: {
-        h2: "48px",
+        headerLg: "56px",
+        h1: "48px",
+        h2: "36px",
       },
     },
   },
