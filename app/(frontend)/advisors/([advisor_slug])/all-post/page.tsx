@@ -1,0 +1,8 @@
+import AllPost from "@/modules/advisor/details/@components/all-post";
+import React from "react";
+
+const AllPostPage = () => {
+  return <AllPost />;
+};
+
+export default AllPostPage;

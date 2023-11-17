@@ -16,7 +16,7 @@ const config: Config = {
         white: "#fff",
         secondary: "#1D1D1B",
         tertiary: "#EA0519",
-        grey: "#f8f9fd",
+        grey: "#F4F7FF",
         black: "#000",
         hover: "#be1622",
         heading: "#170103",
