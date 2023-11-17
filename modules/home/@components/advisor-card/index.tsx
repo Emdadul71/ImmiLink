@@ -21,7 +21,7 @@ const AdvisorCard = ({ data }: propsType) => {
         <h4 className="mb-1 group-hover:text-primary transition-all">
           {data?.name}
         </h4>
-        <p className="mb-0 mt-auto text-lg group-hover:text-body">
+        <p className="text-[11px] mb-0 mt-auto text-lg group-hover:text-body">
           Member Since October 4, 2023
         </p>
       </div>

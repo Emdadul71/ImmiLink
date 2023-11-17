@@ -7,33 +7,38 @@ import TestimonialCard from "../testimonial-card";
 
 const testimonialData = [
   {
-    name: "Cameron Williamson",
-    imgSrc: "/images/country/australia-country.webp",
-    desc: "Aku cocok menggunakan produk night cream white secret dari wardah ini. Buat kulit wajahku terasa lem",
+    name: "Cheryl S. Coley",
+    imgSrc:
+      "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    desc: "Exceptional support! This immigration service provider made my journey stress-free. Their expertise and personalized attention guided me through the process effortlessly. Highly recommend their services for a smooth immigration experience.",
     url: "/country/study-in-australia",
   },
   {
-    name: "Cameron Williamson",
-    imgSrc: "/images/country/canada-country.webp",
-    desc: "Aku cocok menggunakan produk night cream white secret dari wardah ini. Buat kulit wajahku terasa lem",
+    name: "Frank D. Mondy",
+    imgSrc:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    desc: "Impeccable service! This immigration provider's expertise and were invaluable. They streamlined the process, offering crucial support and making my immigration journey smooth. Highly recommended for their professionalism and efficiency.",
     url: "/country/study-in-canada",
   },
   {
-    name: "Cameron Williamson",
-    imgSrc: "/images/country/denmark-country.jpg",
-    desc: "Aku cocok menggunakan produk night cream white secret dari wardah ini. Buat kulit wajahku terasa lem",
+    name: "Mary B. Hughes",
+    imgSrc:
+      "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    desc: "Top-notch service! This immigration provider went above and beyond. Their expert guidance and personalized approach made my immigration process effortless. I highly recommend their services for anyone seeking a smooth transition.",
     url: "/country/study-in-denmark",
   },
   {
-    name: "Cameron Williamson",
-    imgSrc: "/images/country/germany-country.webp",
-    desc: "Aku cocok menggunakan produk night cream white secret dari wardah ini. Buat kulit wajahku terasa lem",
+    name: "Carl J. Rivera",
+    imgSrc:
+      "https://plus.unsplash.com/premium_photo-1688350808212-4e6908a03925?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    desc: "Flawless assistance! This immigration service provider excelled in every aspect. Their expert guidance and meticulous support ensured a hassle-free immigration journey. Highly recommend their services for a seamless experience.",
     url: "/country/study-in-germany",
   },
   {
-    name: "Cameron Williamson",
-    imgSrc: "/images/country/ireland-country.webp",
-    desc: "Aku cocok menggunakan produk night cream white secret dari wardah ini. Buat kulit wajahku terasa lem",
+    name: "Kenneth A. Gentry",
+    imgSrc:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    desc: "Outstanding assistance! This immigration service provider was a game-changer. Their expertise and unwavering support ensured a hassle-free immigration process. Highly recommend their services for a stress-free experience.",
     url: "/country/study-in-ireland",
   },
 ];
@@ -116,7 +121,7 @@ const TestimonialCaresoul = () => {
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    className: "believe_innovation",
+    className: "immi_testimonial",
     responsive: [
       {
         breakpoint: 1024,
@@ -160,7 +165,7 @@ const TestimonialCaresoul = () => {
             sagittis consequat velit semper molestie.{" "}
           </p>
         </div>
-        <div className="lg:mr-[-26vw] overflow-hidden pt-[60px] mt-10 ">
+        <div className="lg:mr-[-26vw] overflow-hidden pt-[70px] mt-10 ">
           <Slider {...settings}>
             {testimonialData.map((item, i) => {
               return (

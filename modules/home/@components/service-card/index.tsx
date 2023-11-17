@@ -9,7 +9,7 @@ interface propsType {
 
 const ServiceCard = ({ data }: propsType) => {
   return (
-    <Link href="#" className="flex flex-col group bg-[#F8FAFF]">
+    <Link href="/knowledge" className="flex flex-col group bg-[#F8FAFF]">
       <div>
         <Image
           src={data?.imgSrc}

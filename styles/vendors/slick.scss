@@ -119,7 +119,12 @@ ul.slick-dots {
 
 .slick-track {
   display: flex !important;
-  padding-bottom: 20px !important;
+  padding-bottom: 95px !important;
+}
+
+.immi_testimonial .slick-track {
+  display: flex !important;
+  padding-bottom: 30px !important;
 }
 
 .slick-slide {
@@ -216,9 +221,67 @@ ul.slick-dots {
     &.believe_innovation_slider_arrow_prev {
       position: absolute;
       left: unset;
-      top: -8% !important;
+      top: 89% !important;
       right: calc(25% + 58px);
+      z-index: 100 !important;
+      box-sizing: content-box;
+    }
+    &.believe_innovation_slider_arrow_next {
+      position: absolute;
+      left: unset;
+      right: 25%;
+      top: 84% !important;
       z-index: 0 !important;
+      box-sizing: content-box;
+    }
+    &.slick-disabled {
+      color: #8c8b90 !important;
+    }
+    &.dark {
+      .believe_innovation_slider_arrow_prev {
+        background: transparent !important;
+      }
+    }
+  }
+}
+
+// Immi Testimonial slider arrow start
+.immi_testimonial {
+  position: relative;
+  .believe_innovation_slider_arrow {
+    background-color: #ffffff !important;
+    color: #113759 !important;
+    width: 20px !important;
+    height: 20px !important;
+    z-index: 1000 !important;
+    top: -100px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 30px;
+      height: 30px;
+      path {
+        stroke-width: 1;
+      }
+    }
+    &:hover {
+      background-color: #be1622 !important;
+      -webkit-box-shadow: inset 0 0 0 0.3125rem rgb(150 144 162 / 15%);
+      box-shadow: inset 0 0 0 0.3125rem rgb(150 144 162 / 15%);
+      transition: all 0.8s;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &.believe_innovation_slider_arrow_prev {
+      position: absolute;
+      left: unset;
+      top: -9% !important;
+      right: calc(25% + 58px);
+      z-index: 100 !important;
       box-sizing: content-box;
     }
     &.believe_innovation_slider_arrow_next {

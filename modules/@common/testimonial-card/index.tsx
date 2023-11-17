@@ -8,7 +8,7 @@ interface propTypes {
   };
   data?: any;
 }
-const TestimonialCard = ({ classes }: propTypes) => {
+const TestimonialCard = ({ classes, data }: propTypes) => {
   return (
     <div
       className={`p-5 lg:p-[30px] bg-white ${
@@ -20,21 +20,18 @@ const TestimonialCard = ({ classes }: propTypes) => {
           <div className="flex items-center gap-3 mb-5">
             <div className="w-[80px] h-[80px] rounded-full">
               <Image
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src={data?.imgSrc}
                 alt="sdgsv"
                 width={80}
                 height={80}
                 className="w-full object-cover h-full rounded-full"
               />
             </div>
-            <p className="mb-0 text-xl font-bold text-black">
-              Cameron Williamson
-            </p>
+            {data?.name && (
+              <p className="mb-0 text-xl font-bold text-black">{data?.name}</p>
+            )}
           </div>
-          <p className="mb-0">
-            Aku cocok menggunakan produk night cream white secret dari wardah
-            ini. Buat kulit wajahku terasa lem
-          </p>
+          <p className="mb-0">{data?.desc}</p>
         </div>
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-1 mt-auto">

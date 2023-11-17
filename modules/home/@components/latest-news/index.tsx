@@ -6,65 +6,45 @@ import { HiOutlineArrowSmLeft } from "react-icons/hi";
 import TestimonialCard from "@/modules/@common/testimonial-card";
 import BlogCard from "@/modules/knowledge/@components/blog-card";
 import Link from "next/link";
+import { FiArrowRight } from "react-icons/fi";
 
 const blogData = [
   {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
+    imgSrc:
+      "/images/blog/Canadian-government-to-conduct-review-of-main-immigration-law.jpg",
+    title: "Canadian government to conduct review of main immigration law",
     desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
     author: "by Adrianne Pasquarelli / 1h",
   },
   {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
+    imgSrc:
+      "/images/blog/Express-Entry-and-Provincial-Nominee-Program-admission-targets-to-rise-over-the-next-three-years.jpg",
+    title:
+      "Express Entry and Provincial Nominee Program admission targets to rise over the next three years",
     desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
     author: "by Adrianne Pasquarelli / 1h",
   },
   {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
+    imgSrc:
+      "/images/blog/IRCC-holds-Express-Entry-draw-for-healthcare-occupations;-third-draw-this-week.jpg",
+    title:
+      "IRCC holds Express Entry draw for healthcare occupations; third draw this week",
     desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
     author: "by Adrianne Pasquarelli / 1h",
   },
   {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
+    imgSrc:
+      "/images/blog/IEC-work-permits-Canada-implements-automated-processing-for-faster-approval-times.jpg",
+    title:
+      "IEC work permits: Canada implements automated processing for faster approval times",
     desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
     author: "by Adrianne Pasquarelli / 1h",
   },
   {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
-    desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
-    author: "by Adrianne Pasquarelli / 1h",
-  },
-  {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
-    desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
-    author: "by Adrianne Pasquarelli / 1h",
-  },
-  {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
-    desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
-    author: "by Adrianne Pasquarelli / 1h",
-  },
-  {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
-    desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
-    author: "by Adrianne Pasquarelli / 1h",
-  },
-  {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
-    desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
-    author: "by Adrianne Pasquarelli / 1h",
-  },
-  {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
+    imgSrc:
+      "/images/blog/Express-Entry-targeted-occupations--How-many-healthcare-workers-does-Canada-need.jpg",
+    title:
+      "Express Entry targeted occupations: How many healthcare workers does Canada need?",
     desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
     author: "by Adrianne Pasquarelli / 1h",
   },
@@ -184,20 +164,24 @@ const LatestNews = () => {
       <div className="container ">
         <div className="flex justify-between items-center mb-[-48px] lg:mb-[-70px]">
           <h2 className="text-h1 mb-0">Latest News</h2>
-          <Link href="/news" className="text-lg mb-0">
-            All News
+          <Link
+            href="/news"
+            className="flex items-center gap-[10px] text-lg mb-0"
+          >
+            <span>All News</span>
+            <FiArrowRight />
           </Link>
         </div>
         <div className="lg:mr-[-26vw] overflow-hidden pt-[60px] mt-10 ">
           <Slider {...settings}>
-            {blogData.map((item, i) => {
+            {blogData.map((item: any, i: any) => {
               return (
                 <BlogCard
                   data={item}
                   key={i}
                   classes={{
-                    root: "mx-2 lg:m-4 !grid-cols-1",
-                    title: "!text-lg",
+                    root: "mr-2 lg:my-4 lg:mr-8 !grid-cols-1",
+                    title: "!text-lg !line-clamp-2",
                     desc: "hidden",
                   }}
                 />

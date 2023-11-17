@@ -4,49 +4,49 @@ import Link from "next/link";
 
 const advisorsData = [
   {
-    name: "Courtney Henry",
+    name: "Michael M. Walton",
     imgSrc: "/images/home/advisor-1.png",
     timeLine: "Member Since October 4, 2023",
     slug: "/advisors",
   },
   {
-    name: "Courtney Henry",
+    name: "Ashley E. Sanchez",
     imgSrc: "/images/home/advisor-2.png",
     timeLine: "Member Since October 4, 2023",
     slug: "/advisors",
   },
   {
-    name: "Courtney Henry",
+    name: "Curtis K. Focht",
     imgSrc: "/images/home/advisor-3.png",
     timeLine: "Member Since October 4, 2023",
     slug: "/advisors",
   },
   {
-    name: "Courtney Henry",
+    name: "Ruben S. Williams",
     imgSrc: "/images/home/advisor-4.png",
     timeLine: "Member Since October 4, 2023",
     slug: "/advisors",
   },
   {
-    name: "Courtney Henry",
+    name: "Cecil A. Preston",
     imgSrc: "/images/home/advisor-2.png",
     timeLine: "Member Since October 4, 2023",
     slug: "/advisors",
   },
   {
-    name: "Courtney Henry",
+    name: "Martin M. Brown",
     imgSrc: "/images/home/advisor-3.png",
     timeLine: "Member Since October 4, 2023",
     slug: "/advisors",
   },
   {
-    name: "Courtney Henry",
+    name: "Mason R. Stagg",
     imgSrc: "/images/home/advisor-4.png",
     timeLine: "Member Since October 4, 2023",
     slug: "/advisors",
   },
   {
-    name: "Courtney Henry",
+    name: "James C. Obrien",
     imgSrc: "/images/home/advisor-1.png",
     timeLine: "Member Since October 4, 2023",
     slug: "/advisors",
@@ -68,7 +68,7 @@ const ImmigrationAdvisors = () => {
           })}
         </div>
         <div className="flex justify-center">
-          <Link href="#" className="btn btn-primary">
+          <Link href="/advisors" className="btn btn-primary">
             View All
           </Link>
         </div>

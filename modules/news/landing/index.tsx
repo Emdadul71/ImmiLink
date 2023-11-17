@@ -15,62 +15,80 @@ import BlogCard from "@/modules/knowledge/@components/blog-card";
 
 const blogData = [
   {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
+    imgSrc:
+      "/images/blog/Canadian-government-to-conduct-review-of-main-immigration-law.jpg",
+    title: "Canadian government to conduct review of main immigration law",
     desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
     author: "by Adrianne Pasquarelli / 1h",
   },
   {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
+    imgSrc:
+      "/images/blog/Express-Entry-and-Provincial-Nominee-Program-admission-targets-to-rise-over-the-next-three-years.jpg",
+    title:
+      "Express Entry and Provincial Nominee Program admission targets to rise over the next three years",
     desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
     author: "by Adrianne Pasquarelli / 1h",
   },
   {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
+    imgSrc:
+      "/images/blog/IRCC-holds-Express-Entry-draw-for-healthcare-occupations;-third-draw-this-week.jpg",
+    title:
+      "IRCC holds Express Entry draw for healthcare occupations; third draw this week",
     desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
     author: "by Adrianne Pasquarelli / 1h",
   },
   {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
+    imgSrc:
+      "/images/blog/IEC-work-permits-Canada-implements-automated-processing-for-faster-approval-times.jpg",
+    title:
+      "IEC work permits: Canada implements automated processing for faster approval times",
     desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
     author: "by Adrianne Pasquarelli / 1h",
   },
   {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
+    imgSrc:
+      "/images/blog/Express-Entry-targeted-occupations--How-many-healthcare-workers-does-Canada-need.jpg",
+    title:
+      "Express Entry targeted occupations: How many healthcare workers does Canada need?",
     desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
     author: "by Adrianne Pasquarelli / 1h",
   },
   {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
+    imgSrc:
+      "/images/blog/Canadian-government-to-conduct-review-of-main-immigration-law.jpg",
+    title: "Canadian government to conduct review of main immigration law",
     desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
     author: "by Adrianne Pasquarelli / 1h",
   },
   {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
+    imgSrc:
+      "/images/blog/Express-Entry-and-Provincial-Nominee-Program-admission-targets-to-rise-over-the-next-three-years.jpg",
+    title:
+      "Express Entry and Provincial Nominee Program admission targets to rise over the next three years",
     desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
     author: "by Adrianne Pasquarelli / 1h",
   },
   {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
+    imgSrc:
+      "/images/blog/IRCC-holds-Express-Entry-draw-for-healthcare-occupations;-third-draw-this-week.jpg",
+    title:
+      "IRCC holds Express Entry draw for healthcare occupations; third draw this week",
     desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
     author: "by Adrianne Pasquarelli / 1h",
   },
   {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
+    imgSrc:
+      "/images/blog/IEC-work-permits-Canada-implements-automated-processing-for-faster-approval-times.jpg",
+    title:
+      "IEC work permits: Canada implements automated processing for faster approval times",
     desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
     author: "by Adrianne Pasquarelli / 1h",
   },
   {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
+    imgSrc:
+      "/images/blog/Express-Entry-targeted-occupations--How-many-healthcare-workers-does-Canada-need.jpg",
+    title:
+      "Express Entry targeted occupations: How many healthcare workers does Canada need?",
     desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
     author: "by Adrianne Pasquarelli / 1h",
   },
@@ -79,7 +97,7 @@ const blogData = [
 const NewsLanding = () => {
   return (
     <>
-      <section className="bg-grey py-8">
+      <section className="bg-grey py-8 ">
         <div className="container">
           <div className="relative">
             <input
@@ -93,7 +111,7 @@ const NewsLanding = () => {
           </div>
         </div>
       </section>
-      <section className="py-5 lg:py-[80px]">
+      <section className="py-5 lg:pt-[20px] lg:pb-[80px]">
         <div className="container">
           <div className="grid lg:grid-cols-[270px_1fr] gap-[30px]">
             <div>
@@ -209,10 +227,13 @@ const NewsLanding = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col gap-[30px]">
-              {blogData?.map((item: any, i: any) => {
-                return <BlogCard key={i} data={item} />;
-              })}
+            <div>
+              <h2 className="mb-5">News</h2>
+              <div className="flex flex-col gap-[30px]">
+                {blogData?.map((item: any, i: any) => {
+                  return <BlogCard key={i} data={item} />;
+                })}
+              </div>
             </div>
           </div>
         </div>

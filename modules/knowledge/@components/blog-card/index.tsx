@@ -10,6 +10,7 @@ interface propsType {
     title?: any;
     desc?: any;
     author?: any;
+    ImgWrapper?: any;
     cat?: any;
   };
   data?: any;
@@ -22,15 +23,16 @@ const BlogCard = ({ classes, data }: propsType) => {
         classes?.root ? classes.root : ``
       }`}
     >
-      <div>
+      <div className={`${classes?.ImgWrapper ? classes.ImgWrapper : ``}`}>
         <Image
           src={data?.imgSrc}
           alt="Blog Card"
-          width={270}
-          height={152}
+          width={370}
+          height={540}
           className={`w-full ${classes?.image ? classes.image : ``}`}
         />
       </div>
+
       <div
         className={`flex flex-col gap-[6px] ${
           classes?.body ? classes.body : ``
@@ -41,15 +43,17 @@ const BlogCard = ({ classes, data }: propsType) => {
             {data?.cat}
           </p>
         )}
+
         {data?.title && (
           <h3
-            className={`mb-0 group-hover:text-primary transition-all ${
+            className={`mb-0 group-hover:text-primary transition-all line-clamp-2 ${
               classes?.title ? classes.title : ``
             }`}
           >
             {data?.title}
           </h3>
         )}
+
         {data?.author && (
           <p
             className={`mb-0 text-black ${
@@ -59,6 +63,7 @@ const BlogCard = ({ classes, data }: propsType) => {
             {data?.author}
           </p>
         )}
+
         {data?.desc && (
           <p
             className={`text-xs mb-0 text-inherit group-hover:text-inherit line-clamp-2 ${

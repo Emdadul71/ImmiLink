@@ -2,32 +2,32 @@ import React from "react";
 import ServiceCard from "../service-card";
 const serviceCard = [
   {
-    imgSrc: "/images/home/service-card-1.png",
+    imgSrc: "/images/home/Express-Entry-Program.jpg",
     title: "Express Entry Program",
     desc: "There are many pathways to Canadian immigration: Express Entry, Provincial Nomination, Family Class, and Business Immigration. Find out more about the many options for moving to Canada permanently!",
   },
   {
-    imgSrc: "/images/home/service-card-2.png",
+    imgSrc: "/images/home/Work-Permit-in-Canada.jpg",
     title: "Work Permit in Canada ",
     desc: "There are many pathways to Canadian immigration: Express Entry, Provincial Nomination, Family Class, and Business Immigration. Find out more about the many options for moving to Canada permanently!",
   },
   {
-    imgSrc: "/images/home/service-card-3.png",
+    imgSrc: "/images/home/Higher-study-in-Canada.jpg",
     title: "Higher study in Canada",
     desc: "There are many pathways to Canadian immigration: Express Entry, Provincial Nomination, Family Class, and Business Immigration. Find out more about the many options for moving to Canada permanently!",
   },
   {
-    imgSrc: "/images/home/service-card-3.png",
+    imgSrc: "/images/home/visit-in-canada.jpg",
     title: "Visit in Canada",
     desc: "There are many pathways to Canadian immigration: Express Entry, Provincial Nomination, Family Class, and Business Immigration. Find out more about the many options for moving to Canada permanently!",
   },
   {
-    imgSrc: "/images/home/service-card-2.png",
+    imgSrc: "/images/home/Family-Sponsorship.jpg",
     title: "Family Sponsorship",
     desc: "There are many pathways to Canadian immigration: Express Entry, Provincial Nomination, Family Class, and Business Immigration. Find out more about the many options for moving to Canada permanently!",
   },
   {
-    imgSrc: "/images/home/service-card-1.png",
+    imgSrc: "/images/home/Business-in-Canada.jpg",
     title: "Business in Canada",
     desc: "There are many pathways to Canadian immigration: Express Entry, Provincial Nomination, Family Class, ",
   },

@@ -2,27 +2,30 @@ import BlogCard from "@/modules/knowledge/@components/blog-card";
 import React from "react";
 const blogData = [
   {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
+    imgSrc:
+      "/images/blog/We’re-changing-the-way-we-identify-top-tasks-for-Canada.jpg",
+    title: "We’re changing the way we identify top tasks",
     desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
     author: "by Adrianne Pasquarelli / 1h",
     cat: "Canada Citizenship",
   },
   {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
+    imgSrc: "/images/blog/Is-Canada-Safe-for-Immigrants.jpg",
+    title: "Is Canada Safe for Immigrants",
     desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
     author: "by Adrianne Pasquarelli / 1h",
     cat: "Canada Citizenship",
   },
   {
-    imgSrc: "/images/blog/blog-card-1.png",
-    title: "Canadian Guide to Uniform Legal Citation (McGill Guide)",
+    imgSrc:
+      "/images/blog/What-to-Do-After-PGWP-Expires-5-Ways-to-Stay-in-Canada.jpg",
+    title: "What to Do After PGWP Expires? – 5 Ways to Stay in Canada",
     desc: " Lorem ipsum dolor sit amet consectetur. Pellentesque arcu proin ac nunc varius fringilla. Massa habitant ipsum libero porta.",
     author: "by Adrianne Pasquarelli / 1h",
     cat: "Canada Citizenship",
   },
 ];
+
 const RecentBlog = () => {
   return (
     <section>
@@ -35,17 +38,17 @@ const RecentBlog = () => {
           </div>
           <h2 className="text-h1 mb-0 font-semibold">Recent Blogs</h2>
         </div>
-        <div className="grid lg:grid-cols-3 gap-[30px]">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
           {blogData?.map((item: any, i: any) => {
             return (
               <BlogCard
                 data={item}
                 key={i}
                 classes={{
-                  root: "!grid-cols-1",
-                  title: "text-lg leading-[26px] font-medium",
+                  root: "!grid-cols-1 lg:!self-start",
+                  title: "text-lg leading-[26px] font-medium !mb-auto",
                   author: "hidden",
-                  desc: "hidden",
+                  desc: "lg:hidden",
                 }}
               />
             );

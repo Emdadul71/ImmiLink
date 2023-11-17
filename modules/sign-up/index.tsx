@@ -25,17 +25,27 @@ const SignUp = () => {
               <div className="flex flex-col gap-5 mb-4">
                 <input
                   type="text"
-                  placeholder="Johnson Doe"
+                  placeholder="Full Name"
                   className="py-2 px-3 border border-[#BDBDBD] w-full rounded-md"
                 />
                 <input
                   type="text"
-                  placeholder="Johnson Doe"
+                  placeholder="Email"
+                  className="py-2 px-3 border border-[#BDBDBD] w-full rounded-md"
+                />
+                <input
+                  type="number"
+                  placeholder="Mobile "
                   className="py-2 px-3 border border-[#BDBDBD] w-full rounded-md"
                 />
                 <input
                   type="text"
-                  placeholder="Johnson Doe"
+                  placeholder="Password"
+                  className="py-2 px-3 border border-[#BDBDBD] w-full rounded-md"
+                />
+                <input
+                  type="text"
+                  placeholder="Confirm Password"
                   className="py-2 px-3 border border-[#BDBDBD] w-full rounded-md"
                 />
                 <button className="btn btn-primary w-full rounded-md py-2">

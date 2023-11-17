@@ -24,18 +24,13 @@ const LogIn = () => {
               <h2>Log In to your Account</h2>
               <div className="flex flex-col gap-5 mb-4">
                 <input
-                  type="text"
-                  placeholder="Johnson Doe"
+                  type="email"
+                  placeholder="Email"
                   className="py-2 px-3 border border-[#BDBDBD] w-full rounded-md"
                 />
                 <input
                   type="text"
-                  placeholder="Johnson Doe"
-                  className="py-2 px-3 border border-[#BDBDBD] w-full rounded-md"
-                />
-                <input
-                  type="text"
-                  placeholder="Johnson Doe"
+                  placeholder="Password"
                   className="py-2 px-3 border border-[#BDBDBD] w-full rounded-md"
                 />
                 <button className="btn btn-primary w-full rounded-md py-2">
