@@ -1,12 +1,12 @@
 "use client";
 import { excerpt } from "@/helpers/utils";
-import TextExpander from "@/modules/@common/text-expander";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { FaRegEnvelope } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMapPin, HiOutlinePrinter } from "react-icons/hi2";
+import TextExpander from "../../@common/text-expander";
 
 const footerText = ` We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit,
   sed do eiusmod tempor incididunt ut labore exercitation ullamco

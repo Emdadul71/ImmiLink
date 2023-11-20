@@ -1,4 +1,4 @@
-import Home from "@/modules/home";
+import Home from "@/modules/frontend/home";
 import React from "react";
 
 const HomePage = () => {

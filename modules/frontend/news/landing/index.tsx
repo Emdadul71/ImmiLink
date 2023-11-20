@@ -11,7 +11,7 @@ import {
   FormOutlined,
 } from "@ant-design/icons";
 import { FiSearch } from "react-icons/fi";
-import BlogCard from "@/modules/knowledge/@components/blog-card";
+import BlogCard from "../../knowledge/@components/blog-card";
 
 const blogData = [
   {

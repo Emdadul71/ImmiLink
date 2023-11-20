@@ -1,4 +1,4 @@
-import Pricing from "@/modules/pricing";
+import Pricing from "@/modules/frontend/pricing";
 import React from "react";
 
 const PricingPage = () => {

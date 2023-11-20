@@ -1,4 +1,4 @@
-import KnowledgeLanding from "@/modules/knowledge/landing";
+import KnowledgeLanding from "@/modules/frontend/knowledge/landing";
 import React from "react";
 
 const BlogLandingPage = () => {

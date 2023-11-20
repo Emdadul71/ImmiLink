@@ -1,4 +1,4 @@
-import BlogCategory from "@/modules/knowledge/category";
+import BlogCategory from "@/modules/frontend/knowledge/category";
 import React from "react";
 
 const BlogCategoryPage = () => {

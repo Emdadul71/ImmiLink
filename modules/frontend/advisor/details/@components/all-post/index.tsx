@@ -1,4 +1,4 @@
-import BlogCard from "@/modules/knowledge/@components/blog-card";
+import BlogCard from "@/modules/frontend/knowledge/@components/blog-card";
 import Link from "next/link";
 import React from "react";
 

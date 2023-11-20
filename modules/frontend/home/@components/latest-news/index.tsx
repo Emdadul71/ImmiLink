@@ -3,10 +3,9 @@ import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
-import TestimonialCard from "@/modules/@common/testimonial-card";
-import BlogCard from "@/modules/knowledge/@components/blog-card";
 import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
+import BlogCard from "@/modules/frontend/knowledge/@components/blog-card";
 
 const blogData = [
   {

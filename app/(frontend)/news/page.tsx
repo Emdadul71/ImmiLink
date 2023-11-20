@@ -1,4 +1,4 @@
-import NewsLanding from "@/modules/news/landing";
+import NewsLanding from "@/modules/frontend/news/landing";
 import React from "react";
 
 const NewsPage = () => {

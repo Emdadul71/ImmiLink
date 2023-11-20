@@ -1,5 +1,5 @@
-import BlogCard from "@/modules/knowledge/@components/blog-card";
 import React from "react";
+import BlogCard from "../../knowledge/@components/blog-card";
 const blogData = [
   {
     imgSrc:

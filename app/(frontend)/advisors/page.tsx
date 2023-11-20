@@ -1,4 +1,4 @@
-import AdvisorLanding from "@/modules/advisor/landing";
+import AdvisorLanding from "@/modules/frontend/advisor/landing";
 import React from "react";
 
 const AdvisorsListPage = () => {

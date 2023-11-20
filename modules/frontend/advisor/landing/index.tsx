@@ -1,5 +1,5 @@
-import AdvisorCard from "@/modules/home/@components/advisor-card";
 import React from "react";
+import AdvisorCard from "../../home/@components/advisor-card";
 
 const advisorsData = [
   {

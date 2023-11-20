@@ -1,5 +1,4 @@
 import { readingTime } from "@/helpers/utils";
-import SocialShare from "@/modules/@common/social_share";
 import moment from "moment";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,6 +6,7 @@ import React from "react";
 import { MdSend } from "react-icons/md";
 import { GoPlus } from "react-icons/go";
 import { LiaCommentsSolid } from "react-icons/lia";
+import SocialShare from "../../@common/social_share";
 
 const BlogDetails = () => {
   return (
