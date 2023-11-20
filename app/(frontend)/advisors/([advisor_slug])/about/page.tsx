@@ -1,4 +1,4 @@
-import AdvisorAbout from "@/modules/advisor/details/@components/about";
+import AdvisorAbout from "@/modules/frontend/advisor/details/@components/about";
 import React from "react";
 
 const AuthorAbout = () => {

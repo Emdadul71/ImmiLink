@@ -1,4 +1,4 @@
-import AllPost from "@/modules/advisor/details/@components/all-post";
+import AllPost from "@/modules/frontend/advisor/details/@components/all-post";
 import React from "react";
 
 const AllPostPage = () => {

@@ -1,4 +1,4 @@
-import Service from "@/modules/advisor/details/@components/service";
+import Service from "@/modules/frontend/advisor/details/@components/service";
 import React from "react";
 
 const AuthorService = () => {

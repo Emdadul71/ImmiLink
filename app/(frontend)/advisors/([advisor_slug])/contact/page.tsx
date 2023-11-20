@@ -1,4 +1,4 @@
-import Contact from "@/modules/advisor/details/@components/contact";
+import Contact from "@/modules/frontend/advisor/details/@components/contact";
 import React from "react";
 
 const ContactInfo = () => {

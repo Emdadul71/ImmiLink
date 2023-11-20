@@ -1,4 +1,4 @@
-import AdvisorHeader from "@/modules/@layout/advisor-header";
+import AdvisorHeader from "@/modules/frontend/@layout/advisor-header";
 
 export default function FrontendLayout({
   children,
