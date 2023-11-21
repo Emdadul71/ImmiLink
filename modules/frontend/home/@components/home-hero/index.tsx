@@ -36,7 +36,7 @@ const HomeHero = () => {
                 name=""
                 id=""
                 placeholder="Search Here"
-                className="w-full py-2 px-8 placeholder:text-sm rounded-md focus:outline-none"
+                className="w-full py-2 px-8 placeholder:text-sm rounded-md focus:outline-none "
               />
               <FiSearch className="absolute top-[50%] translate-y-[-50%] left-[10px] text-tertiary" />
             </div>

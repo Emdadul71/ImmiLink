@@ -8,9 +8,8 @@ export default function FrontendLayout({
   return (
     <div className="flex min-h-screen">
       <SideBar />
-      <div className="w-full  overflow-auto h-[100vh]">
+      <div className="w-full  overflow-auto h-[100vh] bg-[#FAFDFF]">
         <main>{children}</main>
-        <div>Footer</div>
       </div>
     </div>
   );
