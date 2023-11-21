@@ -21,7 +21,7 @@ const Today = () => {
           <FiSearch className="absolute top-[50%] translate-y-[-50%] left-[10px] text-tertiary" />
         </div>
         <div className="grid grid-cols-[270px_1fr_170px] gap-[30px] ">
-          <div className="p-5 bg-[#FFF] border border-[#FFF2F2] rounded-md">
+          <div className="p-5 bg-[#FFF] border border-[#FFF2F2] rounded-md self-start">
             <div className="flex items-center justify-between mb-5">
               <p className="mb-0 font-semibold text-black">Topics</p>
               <Link href="#">See All</Link>
@@ -70,6 +70,7 @@ const Today = () => {
               </li>
             </ul>
           </div>
+
           <div className="flex flex-col gap-4">
             <div className="bg-[#FFF5F6] p-5 rounded-md">
               <p className="mb-0 font-medium text-[#460208]">28562+ Members</p>
@@ -85,10 +86,14 @@ const Today = () => {
                 />
               </div>
               <div className="w-full">
-                <div className="w-full py-2 px-3 bg-[#F4F7FF] rounded-md mb-4">
-                  <span className="text-xs">
-                    What do you want to ask or share?
-                  </span>
+                <div>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder=" What do you want to ask or share?"
+                    className="w-full py-2 px-3 bg-[#F4F7FF] rounded-md mb-4 focus:outline-none"
+                  />
                 </div>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-[6px]">
@@ -101,7 +106,7 @@ const Today = () => {
                   </div>
                   <div className="flex items-center gap-[6px]">
                     <FiEdit2 className="text-xs" />
-                    <span className="text-xs">Ask</span>
+                    <span className="text-xs">Post</span>
                   </div>
                 </div>
               </div>
