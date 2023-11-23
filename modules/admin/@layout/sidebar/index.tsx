@@ -57,7 +57,7 @@ const SideBar = () => {
 
           <div className="flex flex-col items-center">
             <Tooltip placement="right" title={"Create Post"}>
-              <Link href="#" className="p-3">
+              <Link href="/author/add-post" className="p-3">
                 <FiEdit className="text-xl" />
               </Link>
             </Tooltip>
@@ -84,7 +84,7 @@ const SideBar = () => {
             </Tooltip>
 
             <Tooltip placement="right" title={"Help"}>
-              <Link href="#" className="p-3" title="Help">
+              <Link href="/author/help" className="p-3" title="Help">
                 <MdOutlineHelpOutline className="text-[22px]" />
               </Link>
             </Tooltip>

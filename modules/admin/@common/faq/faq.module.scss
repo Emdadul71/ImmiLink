@@ -1,0 +1,18 @@
+.question {
+  cursor: pointer;
+  padding: 10px 24px 10px 24px;
+  position: relative;
+  z-index: 10;
+}
+
+.answer {
+  height: 0px;
+  opacity: 0;
+  position: relative;
+  z-index: 1;
+  transition: height 0.5s ease;
+}
+.answer.auth_height {
+  opacity: 1;
+  height: auto;
+}
