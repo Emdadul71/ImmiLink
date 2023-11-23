@@ -7,8 +7,6 @@ interface propsType {
   type?: any;
 }
 const AdvisorCard = ({ data, type }: propsType) => {
-  console.log("type3", type);
-
   return (
     <Link
       href={`${
