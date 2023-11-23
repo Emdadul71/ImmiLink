@@ -9,10 +9,14 @@ import {
   FiSearch,
   FiSidebar,
 } from "react-icons/fi";
-import { Popover } from "antd";
+import { Popover, Tooltip } from "antd";
 import { FiEdit } from "react-icons/fi";
 import { IoMdStarOutline } from "react-icons/io";
 import { LuListTodo } from "react-icons/lu";
+import { MdOutlineExplore, MdOutlineHelpOutline } from "react-icons/md";
+import { FaRegUser } from "react-icons/fa";
+import { GoCommentDiscussion } from "react-icons/go";
+import { RiDiscussLine } from "react-icons/ri";
 
 const SideBar = () => {
   const text = <span>Title</span>;
@@ -52,12 +56,38 @@ const SideBar = () => {
           </div>
 
           <div className="flex flex-col items-center">
-            <Link href="#" className="p-3">
-              <FiEdit className="text-xl" />
-            </Link>
-            <Link href="#" className="p-3">
-              <FiSearch className="text-xl" />
-            </Link>
+            <Tooltip placement="right" title={"Create Post"}>
+              <Link href="#" className="p-3">
+                <FiEdit className="text-xl" />
+              </Link>
+            </Tooltip>
+
+            <Tooltip placement="right" title={"Discussion"}>
+              <Link href="/author/discussion" className="p-3">
+                <RiDiscussLine className="text-xl" />
+              </Link>
+            </Tooltip>
+
+            <Tooltip placement="right" title={"Explore"}>
+              <Link
+                href="/author/today"
+                className="p-3"
+                onClick={() => setIsExpand((prev) => !prev)}
+              >
+                <MdOutlineExplore className="text-[22px]" />
+              </Link>
+            </Tooltip>
+            <Tooltip placement="right" title={"Member"}>
+              <Link href="/author/advisors" className="p-3">
+                <FaRegUser className="text-[20px]" />
+              </Link>
+            </Tooltip>
+
+            <Tooltip placement="right" title={"Help"}>
+              <Link href="#" className="p-3" title="Help">
+                <MdOutlineHelpOutline className="text-[22px]" />
+              </Link>
+            </Tooltip>
           </div>
 
           <div className="flex justify-center items-center">
@@ -106,7 +136,7 @@ const SideBar = () => {
             </li>
             <li className="px-5 w-full">FEED</li>
             <li className="px-5 w-full">
-              <Link href="#" className="flex items-center gap-3">
+              <Link href="/author/all" className="flex items-center gap-3">
                 <LuListTodo className="text-lg" />
                 <span className="whitespace-nowrap	">All</span>
               </Link>
@@ -139,6 +169,12 @@ const SideBar = () => {
               <Link href="#" className="flex items-center gap-3">
                 <IoMdStarOutline className="text-lg" />
                 <span className="whitespace-nowrap	">Latest News</span>
+              </Link>
+            </li>
+            <li className="px-5 w-full">
+              <Link href="/author/list" className="flex items-center gap-3">
+                <IoMdStarOutline className="text-lg" />
+                <span className="whitespace-nowrap	">List</span>
               </Link>
             </li>
           </ul>

@@ -4,10 +4,20 @@ import React from "react";
 
 interface propsType {
   data?: any;
+  type?: any;
 }
-const AdvisorCard = ({ data }: propsType) => {
+const AdvisorCard = ({ data, type }: propsType) => {
+  console.log("type3", type);
+
   return (
-    <Link href={data?.slug} className="flex flex-col group">
+    <Link
+      href={`${
+        type == "secure"
+          ? `/author/advisors/name/all-post`
+          : `/advisors/${data?.slug}`
+      }`}
+      className="flex flex-col group"
+    >
       <div>
         <Image
           src={data?.imgSrc}

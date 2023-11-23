@@ -1,0 +1,25 @@
+import Account from "@/modules/admin/settings/account";
+import SecuritySettings from "@/modules/admin/settings/security";
+import React from "react";
+import Billing from "./billing/page";
+import Notification from "./notification/page";
+
+const SettingsDetails = ({ params }: any) => {
+  const slug = params?.setting_slug;
+
+  const renderedComponent = () => {
+    if (slug == "security") {
+      return <SecuritySettings />;
+    } else if (slug == "billing") {
+      return <Billing />;
+    } else if (slug == "notification") {
+      return <Notification />;
+    } else {
+      return <Account />;
+    }
+  };
+
+  return <div>{renderedComponent()}</div>;
+};
+
+export default SettingsDetails;

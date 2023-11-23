@@ -6,124 +6,124 @@ const advisorsData = [
     name: "Michael M. Walton",
     imgSrc: "/images/home/advisor-1.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "Ashley E. Sanchez",
     imgSrc: "/images/home/advisor-2.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "Curtis K. Focht",
     imgSrc: "/images/home/advisor-3.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "Ruben S. Williams",
     imgSrc: "/images/home/advisor-4.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "Cecil A. Preston",
     imgSrc: "/images/home/advisor-2.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "Martin M. Brown",
     imgSrc: "/images/home/advisor-3.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "Mason R. Stagg",
     imgSrc: "/images/home/advisor-4.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "James C. Obrien",
     imgSrc: "/images/home/advisor-1.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "Michael M. Walton",
     imgSrc: "/images/home/advisor-1.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "Ashley E. Sanchez",
     imgSrc: "/images/home/advisor-2.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "Curtis K. Focht",
     imgSrc: "/images/home/advisor-3.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "Ruben S. Williams",
     imgSrc: "/images/home/advisor-4.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "Cecil A. Preston",
     imgSrc: "/images/home/advisor-2.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "Martin M. Brown",
     imgSrc: "/images/home/advisor-3.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "Mason R. Stagg",
     imgSrc: "/images/home/advisor-4.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "James C. Obrien",
     imgSrc: "/images/home/advisor-1.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "Cecil A. Preston",
     imgSrc: "/images/home/advisor-2.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "Martin M. Brown",
     imgSrc: "/images/home/advisor-3.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "Mason R. Stagg",
     imgSrc: "/images/home/advisor-4.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
   {
     name: "James C. Obrien",
     imgSrc: "/images/home/advisor-1.png",
     timeLine: "Member Since October 4, 2023",
-    slug: "hereWillBeName/all-post",
+    slug: "/advisors/all-post",
   },
 ];
-const AdvisorLanding = ({ type }: any) => {
+const AdvisorLanding = () => {
   return (
     <section className="py-5 lg:py-[80px]">
       <div className="container">
@@ -135,7 +135,7 @@ const AdvisorLanding = ({ type }: any) => {
         </div>
         <div className="grid lg:grid-cols-4 gap-[30px] lg:mb-[50px]">
           {advisorsData?.map((item: any, i: any) => {
-            return <AdvisorCard data={item} key={i} type={type} />;
+            return <AdvisorCard data={item} key={i} />;
           })}
         </div>
       </div>

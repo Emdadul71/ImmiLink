@@ -1,11 +1,20 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 import { AiOutlineTags } from "react-icons/ai";
 import { HiLanguage } from "react-icons/hi2";
 import { RiMapPinLine } from "react-icons/ri";
 
-const AdvisorHeader = () => {
+const AdvisorHeader = ({ type }: any) => {
+  const path = usePathname();
+  const pathName = path.split("/");
+  const finalPathFrontend = pathName[3];
+  const finalPathAdmin = pathName[4];
+  const finalPathName =
+    type && type == "secure" ? finalPathAdmin : finalPathFrontend;
+
   return (
     <section className="py-5 lg:pt-[60px]">
       <div className="container">
@@ -52,29 +61,56 @@ const AdvisorHeader = () => {
             <ul className="flex gap-5 lg:gap-[30px]">
               <li>
                 <Link
-                  href="/advisors/all-post"
-                  className="inline-block py-[10px]"
+                  href={`${
+                    type == "secure"
+                      ? `/author/advisors/${`ascdascd`}/all-post`
+                      : `/advisors/${`hereWillBeName`}/all-post`
+                  }`}
+                  className={`inline-block py-[10px] ${
+                    finalPathName == "all-post" ? `text-primary` : ``
+                  }`}
                 >
                   All Post
                 </Link>
               </li>
               <li>
-                <Link href="/advisors/about" className="inline-block py-[10px]">
+                <Link
+                  href={`${
+                    type == "secure"
+                      ? `/author/advisors/${`ascdascd`}/about`
+                      : `/advisors/${`hereWillBeName`}/about`
+                  }`}
+                  className={`inline-block py-[10px] ${
+                    finalPathName == "about" ? `text-primary` : ``
+                  }`}
+                >
                   About
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/advisors/services"
-                  className="inline-block py-[10px]"
+                  href={`${
+                    type == "secure"
+                      ? `/author/advisors/${`ascdascd`}/services`
+                      : `/advisors/${`hereWillBeName`}/services`
+                  }`}
+                  className={`inline-block py-[10px] ${
+                    finalPathName == "services" ? `text-primary` : ``
+                  }`}
                 >
                   Services
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/advisors/contact"
-                  className="inline-block py-[10px]"
+                  href={`${
+                    type == "secure"
+                      ? `/author/advisors/${`ascdascd`}/contact`
+                      : `/advisors/${`hereWillBeName`}/contact`
+                  }`}
+                  className={`inline-block py-[10px] ${
+                    finalPathName == "contact" ? `text-primary` : ``
+                  }`}
                 >
                   Contact Info
                 </Link>

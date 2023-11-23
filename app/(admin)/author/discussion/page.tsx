@@ -1,8 +1,8 @@
 import Today from "@/modules/admin/today";
 import React from "react";
 
-const DashBoardPage = () => {
+const Discussion = () => {
   return <Today />;
 };
 
-export default DashBoardPage;
+export default Discussion;

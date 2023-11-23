@@ -1,8 +1,8 @@
 import All from "@/modules/admin/all";
 import React from "react";
 
-const TodayPage = () => {
+const AllPage = () => {
   return <All />;
 };
 
-export default TodayPage;
+export default AllPage;
