@@ -27,7 +27,7 @@ const Service = () => {
   return (
     <section>
       <div className="container">
-        <div className="grid lg:grid-cols-[1fr_328px] max-w-[1028px] w-full gap-[25px]">
+        <div className="grid lg:grid-cols-[1fr_270px] max-w-[970px] w-full gap-[25px]">
           <div className="grid  lg:grid-cols-2 gap-[30px]">
             {serviceCard?.map((item: any, i: any) => {
               return <ServiceCard data={item} key={i} />;

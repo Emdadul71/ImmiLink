@@ -34,7 +34,7 @@ const SideBar = () => {
       <div className="flex flex-col border overflow-auto h-[100vh] scroll ">
         <Link
           href="/author/dashboard"
-          className="flex justify-center items-center py-3 sticky top-0 bg-white"
+          className="flex justify-center items-center py-3 sticky top-0  bg-white "
         >
           <Image
             src="/images/home/sidebar-logo.png"
@@ -44,7 +44,7 @@ const SideBar = () => {
           />
         </Link>
 
-        <div className="flex flex-col justify-between px-3 py-3 h-[calc(100%-64px)] z-10 relative bg-white">
+        <div className="flex flex-col justify-between px-3 py-3 h-[calc(100%-64px)] z-30 relative bg-white">
           <div className="flex justify-center items-center">
             <Link
               href="#"
@@ -55,7 +55,7 @@ const SideBar = () => {
             </Link>
           </div>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center bg-white">
             <Tooltip placement="right" title={"Create Post"}>
               <Link href="/author/add-post" className="p-3">
                 <FiEdit className="text-xl" />
@@ -90,7 +90,7 @@ const SideBar = () => {
             </Tooltip>
           </div>
 
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center pb-3">
             <Popover placement="right" title={text} content={content}>
               <div className="flex justify-center items-center w-[40px] h-[40px] rounded-full cursor-pointer">
                 <Image
@@ -108,7 +108,7 @@ const SideBar = () => {
 
       {isExpand ? (
         <div className="h-full bg-grey w-[180px] transition-all duration-[300ms] overflow-auto ">
-          <ul className="flex flex-col items-start gap-3 lg:mt-[86px] overflow-auto h-[calc(100vh-86px)] scroll">
+          <ul className="flex flex-col items-start gap-3 lg:mt-[86px] overflow-auto h-[calc(100vh-86px)] scroll pb-3">
             <li className="px-5 w-full">
               <Link href="/author/today" className="flex items-center gap-3">
                 <FiFileText className="text-lg" />
