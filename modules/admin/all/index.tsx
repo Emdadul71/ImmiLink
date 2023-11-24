@@ -78,7 +78,7 @@ const blogData = [
     catSlug: "/knowledge/category/study-in-canada",
   },
 ];
-const All = () => {
+const All = ({ type }: any) => {
   const handleChange = (value: string) => {
     console.log(`selected ${value}`);
   };
@@ -163,6 +163,7 @@ const All = () => {
                   <BlogCard
                     key={i}
                     data={item}
+                    type={type}
                     classes={{
                       root: "!grid-cols-1",
                       title: "hidden",
@@ -188,7 +189,12 @@ const All = () => {
             <div className="grid grid-cols-1 gap-[30px]">
               {blogData?.map((item: any, i: any) => {
                 return (
-                  <BlogCard key={i} data={item} classes={{ cat: "hidden" }} />
+                  <BlogCard
+                    key={i}
+                    data={item}
+                    type={type}
+                    classes={{ cat: "hidden" }}
+                  />
                 );
               })}
             </div>

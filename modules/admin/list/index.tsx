@@ -2,8 +2,10 @@
 
 import BlogCard from "@/modules/frontend/knowledge/@components/blog-card";
 import { Select } from "antd";
+import Link from "next/link";
 import React from "react";
 import { FiSearch } from "react-icons/fi";
+import { GoPlus } from "react-icons/go";
 const blogData = [
   {
     imgSrc:
@@ -76,7 +78,9 @@ const blogData = [
     catSlug: "/knowledge/category/study-in-canada",
   },
 ];
-const List = () => {
+const List = ({ type }: any) => {
+  console.log("type", type);
+
   const handleChange = (value: string) => {
     console.log(`selected ${value}`);
   };
@@ -106,13 +110,178 @@ const List = () => {
               <FiSearch className="absolute top-[50%] translate-y-[-50%] left-[10px] text-tertiary" />
             </div>
           </div>
-          <div>
+          {/* <div>
             <div className="grid grid-cols-1 gap-[30px]">
               {blogData?.map((item: any, i: any) => {
                 return (
                   <BlogCard key={i} data={item} classes={{ cat: "hidden" }} />
                 );
               })}
+            </div>
+          </div> */}
+        </div>
+        <div className="max-w-[1170px] mx-auto w-full">
+          <div className="grid lg:grid-cols-[270px_1fr] gap-[30px]">
+            <div>
+              <p className="text-secondary font-semibold">Topics</p>
+              <ul className="flex flex-col gap-[12px]">
+                <li>
+                  <Link
+                    href={`${
+                      type == "secure"
+                        ? "/author/blog/category/canadian-citizen"
+                        : "/knowledge/category/canada-citizenship"
+                    }`}
+                    className="flex items-start gap-1 mb-3"
+                  >
+                    <GoPlus className="font-bold" />
+                    <span className="text-sm font-bold">
+                      Canada Citizenship
+                    </span>
+                  </Link>
+                  <ul className="flex flex-col gap-3 pl-5">
+                    <li>
+                      <Link
+                        href={`${
+                          type == "secure"
+                            ? "/author/blog/category/canadian-citizen"
+                            : "/knowledge/category/canada-citizenship"
+                        }`}
+                        className="flex items-start gap-1"
+                      >
+                        <GoPlus className="font-bold" />
+                        <span className="text-sm font-bold">
+                          Canada Citizenship
+                        </span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href={`${
+                          type == "secure"
+                            ? "/author/blog/category/canadian-citizen"
+                            : "/knowledge/category/canada-citizenship"
+                        }`}
+                        className="flex items-start gap-1"
+                      >
+                        <GoPlus className="font-bold" />
+                        <span className="text-sm font-bold">
+                          Canada Citizenship
+                        </span>
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <Link
+                    href={`${
+                      type == "secure"
+                        ? "/author/blog/category/canadian-citizen"
+                        : "/knowledge/category/canada-citizenship"
+                    }`}
+                    className="flex items-start gap-1"
+                  >
+                    <GoPlus className="font-bold" />
+                    <span className="text-sm font-bold">
+                      Skilled Immigration programs
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`${
+                      type == "secure"
+                        ? "/author/blog/category/canadian-citizen"
+                        : "/knowledge/category/canada-citizenship"
+                    }`}
+                    className="flex items-start gap-1"
+                  >
+                    <GoPlus className="font-bold" />
+                    <span className="text-sm font-bold">
+                      Family / spousal sponsorship
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`${
+                      type == "secure"
+                        ? "/author/blog/category/canadian-citizen"
+                        : "/knowledge/category/canada-citizenship"
+                    }`}
+                    className="flex items-start gap-1"
+                  >
+                    <GoPlus className="font-bold" />
+                    <span className="text-sm font-bold">
+                      Parents and Grandparents Program (PGP)
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`${
+                      type == "secure"
+                        ? "/author/blog/category/canadian-citizen"
+                        : "/knowledge/category/canada-citizenship"
+                    }`}
+                    className="flex items-start gap-1"
+                  >
+                    <GoPlus className="font-bold" />
+                    <span className="text-sm font-bold">
+                      Admission and Study Permit
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`${
+                      type == "secure"
+                        ? "/author/blog/category/canadian-citizen"
+                        : "/knowledge/category/canada-citizenship"
+                    }`}
+                    className="flex items-start gap-1"
+                  >
+                    <GoPlus className="font-bold" />
+                    <span className="text-sm font-bold">Open Work Permit</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`${
+                      type == "secure"
+                        ? "/author/blog/category/canadian-citizen"
+                        : "/knowledge/category/canada-citizenship"
+                    }`}
+                    className="flex items-start gap-1"
+                  >
+                    <GoPlus className="font-bold" />
+                    <span className="text-sm font-bold">
+                      Start up visa program
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`${
+                      type == "secure"
+                        ? "/author/blog/category/canadian-citizen"
+                        : "/knowledge/category/canada-citizenship"
+                    }`}
+                    className="flex items-start gap-1"
+                  >
+                    <GoPlus className="font-bold" />
+                    <span className="text-sm font-bold">Visitor visa</span>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="mb-5">Blog</h2>
+              <div className="flex flex-col gap-[30px]">
+                {blogData?.map((item: any, i: any) => {
+                  return <BlogCard key={i} data={item} type={type} />;
+                })}
+              </div>
             </div>
           </div>
         </div>

@@ -14,11 +14,16 @@ interface propsType {
     cat?: any;
   };
   data?: any;
+  type?: any;
 }
-const BlogCard = ({ classes, data }: propsType) => {
+const BlogCard = ({ classes, data, type }: propsType) => {
   return (
     <Link
-      href="/knowledge/canadian-guide"
+      href={`${
+        type == "secure"
+          ? `/author/blog/canadian-guide`
+          : `/knowledge/canadian-guide`
+      }`}
       className={`grid lg:grid-cols-[270px_1fr] items-center gap-4 group hover:text-inherit ${
         classes?.root ? classes.root : ``
       }`}

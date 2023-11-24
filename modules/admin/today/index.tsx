@@ -625,7 +625,8 @@ const Today = () => {
             </div>
           </div>
           {/* right Side */}
-          <AdvertisementLeftSide />
+          {/* <AdvertisementLeftSide /> */}
+          <div></div>
         </div>
 
         {/* modal */}

@@ -65,7 +65,7 @@ const blogData = [
   },
 ];
 
-const BlogCategory = () => {
+const BlogCategory = ({ type }: any) => {
   return (
     <>
       <section className="bg-grey py-8">
@@ -90,7 +90,11 @@ const BlogCategory = () => {
               <ul className="flex flex-col gap-[12px]">
                 <li>
                   <Link
-                    href="/knowledge/category/canada-citizenship"
+                    href={`${
+                      type == "secure"
+                        ? "/author/blog/category/canadian-citizen"
+                        : "/knowledge/category/canada-citizenship"
+                    }`}
                     className="flex items-start gap-1 mb-3"
                   >
                     <GoPlus className="font-bold" />
@@ -101,7 +105,11 @@ const BlogCategory = () => {
                   <ul className="flex flex-col gap-3 pl-5">
                     <li>
                       <Link
-                        href="/knowledge/category/canada-citizenship"
+                        href={`${
+                          type == "secure"
+                            ? "/author/blog/category/canadian-citizen"
+                            : "/knowledge/category/canada-citizenship"
+                        }`}
                         className="flex items-start gap-1"
                       >
                         <GoPlus className="font-bold" />
@@ -112,7 +120,11 @@ const BlogCategory = () => {
                     </li>
                     <li>
                       <Link
-                        href="/knowledge/category/canada-citizenship"
+                        href={`${
+                          type == "secure"
+                            ? "/author/blog/category/canadian-citizen"
+                            : "/knowledge/category/canada-citizenship"
+                        }`}
                         className="flex items-start gap-1"
                       >
                         <GoPlus className="font-bold" />
@@ -136,7 +148,11 @@ const BlogCategory = () => {
                 </li>
                 <li>
                   <Link
-                    href="/knowledge/category/canada-citizenship"
+                    href={`${
+                      type == "secure"
+                        ? "/author/blog/category/canadian-citizen"
+                        : "/knowledge/category/canada-citizenship"
+                    }`}
                     className="flex items-start gap-1"
                   >
                     <GoPlus className="font-bold" />
@@ -147,7 +163,11 @@ const BlogCategory = () => {
                 </li>
                 <li>
                   <Link
-                    href="/knowledge/category/canada-citizenship"
+                    href={`${
+                      type == "secure"
+                        ? "/author/blog/category/canadian-citizen"
+                        : "/knowledge/category/canada-citizenship"
+                    }`}
                     className="flex items-start gap-1"
                   >
                     <GoPlus className="font-bold" />
@@ -158,7 +178,11 @@ const BlogCategory = () => {
                 </li>
                 <li>
                   <Link
-                    href="/knowledge/category/canada-citizenship"
+                    href={`${
+                      type == "secure"
+                        ? "/author/blog/category/canadian-citizen"
+                        : "/knowledge/category/canada-citizenship"
+                    }`}
                     className="flex items-start gap-1"
                   >
                     <GoPlus className="font-bold" />
@@ -169,7 +193,11 @@ const BlogCategory = () => {
                 </li>
                 <li>
                   <Link
-                    href="/knowledge/category/canada-citizenship"
+                    href={`${
+                      type == "secure"
+                        ? "/author/blog/category/canadian-citizen"
+                        : "/knowledge/category/canada-citizenship"
+                    }`}
                     className="flex items-start gap-1"
                   >
                     <GoPlus className="font-bold" />
@@ -178,7 +206,11 @@ const BlogCategory = () => {
                 </li>
                 <li>
                   <Link
-                    href="/knowledge/category/canada-citizenship"
+                    href={`${
+                      type == "secure"
+                        ? "/author/blog/category/canadian-citizen"
+                        : "/knowledge/category/canada-citizenship"
+                    }`}
                     className="flex items-start gap-1"
                   >
                     <GoPlus className="font-bold" />
@@ -189,7 +221,11 @@ const BlogCategory = () => {
                 </li>
                 <li>
                   <Link
-                    href="/knowledge/category/canada-citizenship"
+                    href={`${
+                      type == "secure"
+                        ? "/author/blog/category/canadian-citizen"
+                        : "/knowledge/category/canada-citizenship"
+                    }`}
                     className="flex items-start gap-1"
                   >
                     <GoPlus className="font-bold" />
@@ -202,7 +238,7 @@ const BlogCategory = () => {
               <h2 className="mb-5">Canada Citizenship</h2>
               <div className="flex flex-col gap-[30px]">
                 {blogData?.map((item: any, i: any) => {
-                  return <BlogCard key={i} data={item} />;
+                  return <BlogCard key={i} data={item} type={type} />;
                 })}
               </div>
             </div>
