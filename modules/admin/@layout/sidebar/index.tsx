@@ -17,18 +17,19 @@ import { MdOutlineExplore, MdOutlineHelpOutline } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa";
 import { GoCommentDiscussion } from "react-icons/go";
 import { RiDiscussLine } from "react-icons/ri";
+import ProfileDropdown from "../../@common/profileDropdown";
 
 const SideBar = () => {
   const text = <span>Title</span>;
 
   const [isExpand, setIsExpand] = useState(false);
 
-  const content = (
-    <div>
-      <p>Content</p>
-      <p>Content</p>
-    </div>
-  );
+  // const content = (
+  //   <div>
+  //     <p>Content</p>
+  //     <p>Content</p>
+  //   </div>
+  // );
   return (
     <div className="flex">
       <div className="flex flex-col border overflow-auto h-[100vh] scroll ">
@@ -90,7 +91,7 @@ const SideBar = () => {
             </Tooltip>
           </div>
 
-          <div className="flex justify-center items-center pb-3">
+          {/* <div className="flex justify-center items-center pb-3">
             <Popover placement="right" title={text} content={content}>
               <div className="flex justify-center items-center w-[40px] h-[40px] rounded-full cursor-pointer">
                 <Image
@@ -102,7 +103,8 @@ const SideBar = () => {
                 />
               </div>
             </Popover>
-          </div>
+          </div> */}
+          <ProfileDropdown />
         </div>
       </div>
 

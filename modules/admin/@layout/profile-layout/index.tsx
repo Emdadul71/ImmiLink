@@ -3,10 +3,16 @@ import Link from "next/link";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import { FaRegFileAlt } from "react-icons/fa";
 import { IoMdNotificationsOutline } from "react-icons/io";
+import { CgProfile } from "react-icons/cg";
 import { LuUsers2 } from "react-icons/lu";
 import { MdLockOutline } from "react-icons/md";
 
 const profileData = [
+  {
+    icon: <CgProfile />,
+    label: "Profile",
+    slug: "profile",
+  },
   {
     icon: <LuUsers2 />,
     label: "Account",
