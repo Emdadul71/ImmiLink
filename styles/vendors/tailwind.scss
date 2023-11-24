@@ -71,4 +71,7 @@
   .btn-primary {
     @apply cursor-pointer inline-flex gap-1.5 font-medium items-center justify-center py-1.5 px-4 bg-[#EA0519] hover:bg-primary text-white hover:text-white whitespace-nowrap;
   }
+  .btn-grey {
+    @apply cursor-pointer inline-flex gap-1.5 font-medium items-center justify-center py-1.5 px-4 bg-grey hover:bg-primary  hover:text-white whitespace-nowrap;
+  }
 }

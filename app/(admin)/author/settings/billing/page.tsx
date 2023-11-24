@@ -1,7 +1,8 @@
+import Billing from "@/modules/admin/settings/billing";
 import React from "react";
 
-const Billing = () => {
-  return <div>Billing</div>;
+const BillingPage = () => {
+  return <Billing />;
 };
 
-export default Billing;
+export default BillingPage;

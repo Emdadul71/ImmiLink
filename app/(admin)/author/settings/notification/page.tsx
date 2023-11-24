@@ -1,7 +1,8 @@
+import Notification from "@/modules/admin/settings/notification";
 import React from "react";
 
-const Notification = () => {
-  return <div>Notification</div>;
+const NotificationPage = () => {
+  return <Notification />;
 };
 
-export default Notification;
+export default NotificationPage;
