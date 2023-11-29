@@ -66,8 +66,8 @@ const FaqModule = () => {
 
         <div className="container">
           <div className="max-w-[1110px] w-full mx-auto">
-            <div className="heading_wrapper flex flex-col justify-center items-center pt-[100px] pb-[60px]">
-              <h1 className="text-primary mb-[30px]">
+            <div className="heading_wrapper flex flex-col justify-center items-center pt-[100px] pb-5 lg:pb-[60px]">
+              <h1 className="text-primary mb-[30px] text-center lg:text-start">
                 How can we<span className="text-secondary"> help you?</span>{" "}
               </h1>
               <div className="max-w-[500px] w-full relative">
@@ -81,8 +81,8 @@ const FaqModule = () => {
                 <FiSearch className="absolute top-[14px] left-[24px]" />
               </div>
             </div>
-            <div className="grid grid-cols-[270px_1fr] gap-[40px] z-50">
-              <div className="flex flex-col gap-[20px] cursor-pointer p-[40px] bg-[#ffffff] rounded-[6px] self-start">
+            <div className="grid lg:grid-cols-[270px_1fr] gap-5 lg:gap-[40px] z-50">
+              <div className="flex flex-col gap-[20px] cursor-pointer p-5 lg:p-[40px] bg-[#ffffff] rounded-[6px] self-start">
                 {tabData.map((item, i) => {
                   return (
                     <div

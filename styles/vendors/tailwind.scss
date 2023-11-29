@@ -74,4 +74,20 @@
   .btn-grey {
     @apply cursor-pointer inline-flex gap-1.5 font-medium items-center justify-center py-1.5 px-4 bg-grey hover:bg-primary  hover:text-white whitespace-nowrap;
   }
+
+  .h1 {
+    @apply lg:text-[48px] md:text-[38px] text-[28px];
+  }
+  .h2 {
+    @apply lg:text-[36px] md:text-[26px] text-[20px];
+  }
+  .h3 {
+    @apply lg:text-[24px] md:text-[22px] text-[20px];
+  }
+  .h4 {
+    @apply lg:text-[18px] md:text-[16px] text-[16px];
+  }
+  .h5 {
+    @apply lg:text-[16px] md:text-[16px] text-[16px];
+  }
 }

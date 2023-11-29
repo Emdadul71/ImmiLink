@@ -44,7 +44,7 @@ const Today = () => {
           <FiSearch className="absolute top-[50%] translate-y-[-50%] left-[10px] text-tertiary" />
         </div>
 
-        <div className="grid grid-cols-[270px_1fr_170px] gap-[30px] ">
+        <div className="grid lg:grid-cols-[270px_1fr_170px] lg:gap-[30px] ">
           {/* left Side */}
           <div className="p-5 bg-[#FFF] border border-[#FFF2F2] rounded-md self-start">
             <div className="flex items-center justify-between mb-5">

@@ -92,7 +92,7 @@ const All = ({ type }: any) => {
       key: "1",
       label: "All Content",
       children: (
-        <div className="grid grid-cols-4 gap-[30px]">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-[30px]">
           {catCardData?.map((item: any, i: any) => {
             return <CategoryCard data={item} key={i} />;
           })}
@@ -121,7 +121,7 @@ const All = ({ type }: any) => {
     },
   ];
   return (
-    <section className="pt-[60px]">
+    <section className="pt-[80px]">
       <div className="container">
         <div className="max-w-[770px] w-full mx-auto ">
           <div className="flex items-center mb-6 lg:mb-[60px]">
@@ -157,7 +157,7 @@ const All = ({ type }: any) => {
           </div>
           <div className="mb-10">
             <h3 className="mb-[30px]"> What news on Immilink Canada</h3>
-            <div className="grid grid-cols-4 gap-[30px]">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-[30px]">
               {blogData?.map((item: any, i: any) => {
                 return (
                   <BlogCard
@@ -186,7 +186,7 @@ const All = ({ type }: any) => {
                 View All
               </Link>
             </div>
-            <div className="grid grid-cols-1 gap-[30px]">
+            <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-[30px]">
               {blogData?.map((item: any, i: any) => {
                 return (
                   <BlogCard

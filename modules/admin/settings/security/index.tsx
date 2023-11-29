@@ -18,7 +18,7 @@ const SecuritySettings = () => {
           <div className="bg-white shadow-[0px_4px_18px_0px_rgba(0,0,0,0.10)] rounded-md mb-6">
             <div className="p-6">
               <h4 className="mb-6">Profile Details</h4>
-              <div className="grid grid-cols-2 gap-x-[30px] gap-y-4">
+              <div className="grid lg:grid-cols-2 gap-x-[30px] gap-y-4">
                 <div className="w-full">
                   <label htmlFor="" className="text-xs mb-1">
                     Current Password

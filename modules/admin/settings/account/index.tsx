@@ -18,28 +18,30 @@ const Account = () => {
           <div className="bg-white shadow-[0px_4px_18px_0px_rgba(0,0,0,0.10)] rounded-md mb-6">
             <div className="p-6 border-b">
               <h4>Profile Details</h4>
-              <div className="flex items-center gap-7">
-                <Image
-                  src="/images/misc/account-avatar.png"
-                  alt="Blog Card"
-                  width={100}
-                  height={100}
-                  className="object-cover"
-                />
-                <div className="flex flex-col gap-4 justify-between">
-                  <div>
+              <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start items-center gap-2 lg:gap-7">
+                <div className="shrink-0	">
+                  <Image
+                    src="/images/misc/account-avatar.png"
+                    alt="Blog Card"
+                    width={100}
+                    height={100}
+                    className="object-cover"
+                  />
+                </div>
+                <div className="flex flex-col justify-center w-full gap-4 lg:justify-between">
+                  <div className="flex justify-center lg:justify-start">
                     <button className="btn btn-primary rounded-md">
                       Upload new photo
                     </button>
                   </div>
-                  <p className="mb-0">
+                  <p className="mb-0 text-center lg:text-start">
                     Allowed JPG, GIF or PNG. Max size of 800K
                   </p>
                 </div>
               </div>
             </div>
             <div className="p-6">
-              <div className="grid grid-cols-2 gap-x-[30px] gap-y-4">
+              <div className="grid lg:grid-cols-2 gap-x-[30px] gap-y-4">
                 <div className="w-full">
                   <label htmlFor="" className="text-xs mb-1">
                     First Name

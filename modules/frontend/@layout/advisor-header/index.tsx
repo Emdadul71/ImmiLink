@@ -18,7 +18,7 @@ const AdvisorHeader = ({ type }: any) => {
   return (
     <section className="py-5 lg:pt-[60px]">
       <div className="container">
-        <div className="max-w-[970px]">
+        <div className="max-w-[970px] w-full">
           <Image
             src="/images/misc/advisor-details.png"
             alt="Advisor Details"
@@ -26,8 +26,8 @@ const AdvisorHeader = ({ type }: any) => {
             height={690}
             className="w-full"
           />
-          <div className="flex items-end gap-[30px] px-[30px] pb-[30px] -mt-[40px] rounded-md border border-t-0">
-            <div className="w-[125px] h-[125px] z-10 relative rounded-md border border-[4px] border-white rounded-[6px] bg-white shrink-0	">
+          <div className="flex flex-col lg:flex-row items-center lg:items-end gap-3 lg:gap-[30px] px-[30px] pb-[30px] -mt-[40px] rounded-md border border-t-0">
+            <div className="w-[125px] h-[125px]  z-10 relative rounded-md border border-[4px] border-white rounded-[6px] bg-white shrink-0	">
               <Image
                 src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Advisor Details"
@@ -36,10 +36,12 @@ const AdvisorHeader = ({ type }: any) => {
                 className="w-full h-full object-cover rounded-md"
               />
             </div>
-            <div className="flex flex-col lg:flex-row justify-between items-center w-full ">
+            <div className="flex flex-col lg:flex-row justify-between items-center w-full gap-3">
               <div>
-                <h3 className="mb-2">Belle Ferguson</h3>
-                <div className="flex flex-wrap gap-5">
+                <h3 className="mb-2 text-center lg:text-start">
+                  Belle Ferguson
+                </h3>
+                <div className="flex justify-center lg:justify-start flex-wrap gap-2 lg:gap-5">
                   <div className="flex items-center gap-2">
                     <AiOutlineTags />
                     <span>RCIC (R100200)</span>
@@ -58,7 +60,7 @@ const AdvisorHeader = ({ type }: any) => {
             </div>
           </div>
           <div className="max-w-[675px]">
-            <ul className="flex gap-5 lg:gap-[30px]">
+            <ul className="flex gap-5 lg:gap-[30px] overflow-auto">
               <li>
                 <Link
                   href={`${
@@ -66,7 +68,7 @@ const AdvisorHeader = ({ type }: any) => {
                       ? `/author/advisors/${`ascdascd`}/all-post`
                       : `/advisors/${`hereWillBeName`}/all-post`
                   }`}
-                  className={`inline-block py-[10px] ${
+                  className={`inline-block py-[10px] whitespace-nowrap ${
                     finalPathName == "all-post" ? `text-primary` : ``
                   }`}
                 >
@@ -108,7 +110,7 @@ const AdvisorHeader = ({ type }: any) => {
                       ? `/author/advisors/${`ascdascd`}/contact`
                       : `/advisors/${`hereWillBeName`}/contact`
                   }`}
-                  className={`inline-block py-[10px] ${
+                  className={`inline-block py-[10px] whitespace-nowrap ${
                     finalPathName == "contact" ? `text-primary` : ``
                   }`}
                 >

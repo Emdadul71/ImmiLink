@@ -41,7 +41,7 @@ const blogData = [
   },
 ];
 
-const AllPost = () => {
+const AllPost = ({ type }: any) => {
   return (
     <section>
       <div className="container">
@@ -51,7 +51,7 @@ const AllPost = () => {
               return (
                 <div key={i}>
                   {i % 2 == 0 ? <p>28th May 2023</p> : null}
-                  <BlogCard data={item} />
+                  <BlogCard data={item} type={type} />
                 </div>
               );
             })}

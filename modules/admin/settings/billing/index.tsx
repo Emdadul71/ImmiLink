@@ -29,7 +29,7 @@ const Billing = () => {
           <div className="bg-white shadow-[0px_4px_18px_0px_rgba(0,0,0,0.10)] rounded-md mb-6">
             <div className="p-6">
               <h4 className="mb-6">Current Plan</h4>
-              <div className="grid grid-cols-2 items-center">
+              <div className="grid lg:grid-cols-2 items-center gap-3 lg:gap-0">
                 <div className="flex flex-col gap-4">
                   <div>
                     <p className="mb-[6px] font-semibold">
@@ -94,8 +94,8 @@ const Billing = () => {
           <div className="bg-white shadow-[0px_4px_18px_0px_rgba(0,0,0,0.10)] rounded-md mb-6">
             <div className="p-6">
               <h4 className="mb-0">Payment Methods</h4>
-              <div className="grid grid-cols-2 gap-4 items-center">
-                <div className="flex flex-col gap-4">
+              <div className="grid lg:grid-cols-2 gap-4 items-center">
+                <div className="flex flex-col gap-4 order-1 lg:order-0">
                   <div>
                     <Radio.Group onChange={onChange2} value={value}>
                       <Radio value={1}>Credit/Debit/ATM Card</Radio>
@@ -177,7 +177,8 @@ const Billing = () => {
                     </div>
                   </div>
                 </div>
-                <div>
+
+                <div className="order-0 lg:order-1">
                   <div className="flex flex-col gap-[10px] px-4 py-3 bg-[#A8AAAE29] rounded-md mb-4">
                     <div className="flex items-center  justify-between mb-4">
                       <div>
@@ -243,7 +244,7 @@ const Billing = () => {
           <div className="bg-white shadow-[0px_4px_18px_0px_rgba(0,0,0,0.10)] rounded-md mb-6">
             <div className="p-6">
               <h4>Billing Address</h4>
-              <div className="grid grid-cols-2 gap-x-[30px] gap-y-4">
+              <div className="grid lg:grid-cols-2 gap-x-[30px] gap-y-4">
                 <div className="w-full">
                   <label htmlFor="" className="text-xs mb-1">
                     Company Name
@@ -332,7 +333,7 @@ const Billing = () => {
                     ]}
                   />
                 </div>
-                <div className="w-full col-span-2">
+                <div className="w-full lg:col-span-2">
                   <label htmlFor="" className="text-xs mb-1">
                     Billing Address
                   </label>

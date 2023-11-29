@@ -24,8 +24,6 @@ const config: Config = {
       },
       fontSize: {
         headerLg: "56px",
-        h1: "48px",
-        h2: "36px",
       },
     },
   },

@@ -26,7 +26,7 @@ const Profile = () => {
           <div className="bg-white shadow-[0px_4px_18px_0px_rgba(0,0,0,0.10)] rounded-md mb-6">
             <div className="p-6">
               <h4 className="mb-6">Personal Details</h4>
-              <div className="grid grid-cols-2 gap-[24px]">
+              <div className="grid lg:grid-cols-2 gap-[24px]">
                 <div className="w-full">
                   <input
                     type="text"
@@ -36,6 +36,7 @@ const Profile = () => {
                     className="w-full py-2 px-3 border focus:outline-none rounded-md"
                   />
                 </div>
+
                 <div className="w-full">
                   <input
                     type="text"
@@ -45,6 +46,7 @@ const Profile = () => {
                     className="w-full py-2 px-3 border focus:outline-none rounded-md"
                   />
                 </div>
+
                 <DatePicker
                   onChange={onChange}
                   size="large"
@@ -75,32 +77,36 @@ const Profile = () => {
                     { value: "Yiminghe", label: "yiminghe" },
                   ]}
                 />
-                <Select
-                  placeholder="Select Country of Citizenship "
-                  mode="multiple"
-                  style={{ width: "100%" }}
-                  size="large"
-                  className="settings_form"
-                  onChange={handleChange}
-                  options={[
-                    { value: "jack", label: "Jack" },
-                    { value: "lucy", label: "Lucy" },
-                    { value: "Yiminghe", label: "yiminghe" },
-                  ]}
-                />
-                <Select
-                  placeholder="Select Countries with Permanent Resident  "
-                  mode="multiple"
-                  style={{ width: "100%" }}
-                  size="large"
-                  className="settings_form"
-                  onChange={handleChange}
-                  options={[
-                    { value: "jack", label: "Jack" },
-                    { value: "lucy", label: "Lucy" },
-                    { value: "Yiminghe", label: "yiminghe" },
-                  ]}
-                />
+                <div>
+                  <Select
+                    placeholder="Select Country of Citizenship "
+                    mode="multiple"
+                    style={{ width: "100%" }}
+                    size="large"
+                    className="settings_form"
+                    onChange={handleChange}
+                    options={[
+                      { value: "jack", label: "Jack" },
+                      { value: "lucy", label: "Lucy" },
+                      { value: "Yiminghe", label: "yiminghe" },
+                    ]}
+                  />
+                </div>
+                <div>
+                  <Select
+                    placeholder="Select Countries with Permanent Resident  "
+                    mode="multiple"
+                    style={{ width: "100%" }}
+                    size="large"
+                    className="settings_form"
+                    onChange={handleChange}
+                    options={[
+                      { value: "jack", label: "Jack" },
+                      { value: "lucy", label: "Lucy" },
+                      { value: "Yiminghe", label: "yiminghe" },
+                    ]}
+                  />
+                </div>
                 <div></div>
                 <div className="w-full flex items-center justify-between col-span-2">
                   <p className="mb-0">Language Proficiency:</p>

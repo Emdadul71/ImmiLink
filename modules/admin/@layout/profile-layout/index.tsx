@@ -40,9 +40,9 @@ const ProfileLayout = () => {
   const finalPath = pathName[3];
 
   return (
-    <section className="py-[80px]">
+    <section className="py-5 lg:py-[80px]">
       <div className="container">
-        <div className="flex max-w-[770px] mx-auto w-full">
+        <div className="flex max-w-[770px] mx-auto w-full overflow-auto pb-4 lg:pb-0">
           <div className="flex gap-5 items-center ">
             {profileData?.map((item: any, i: any) => {
               return (
