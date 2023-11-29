@@ -48,7 +48,6 @@ const CommonSideBar = ({ setOpen, open, isDrawerTrue = false }: any) => {
           <Link
             href="/author/dashboard"
             className="flex justify-center items-center py-3 sticky top-0  bg-white "
-            onClick={() => setOpen((prev: any) => !prev)}
           >
             <Image
               src="/images/home/sidebar-logo.png"
@@ -71,13 +70,21 @@ const CommonSideBar = ({ setOpen, open, isDrawerTrue = false }: any) => {
 
             <div className="flex flex-col items-center bg-white">
               <Tooltip placement="right" title={"Create Post"}>
-                <Link href="/author/add-post" className="p-3">
+                <Link
+                  href="/author/add-post"
+                  className="p-3"
+                  onClick={() => setOpen(() => false)}
+                >
                   <FiEdit className="text-xl" />
                 </Link>
               </Tooltip>
 
               <Tooltip placement="right" title={"Discussion"}>
-                <Link href="/author/discussion" className="p-3">
+                <Link
+                  href="/author/discussion"
+                  className="p-3"
+                  onClick={() => setOpen(() => false)}
+                >
                   <RiDiscussLine className="text-xl" />
                 </Link>
               </Tooltip>
@@ -86,19 +93,28 @@ const CommonSideBar = ({ setOpen, open, isDrawerTrue = false }: any) => {
                 <Link
                   href="/author/today"
                   className="p-3"
-                  onClick={() => setIsExpand((prev) => !prev)}
+                  onClick={() => setIsExpand(() => false)}
                 >
                   <MdOutlineExplore className="text-[22px]" />
                 </Link>
               </Tooltip>
               <Tooltip placement="right" title={"Member"}>
-                <Link href="/author/advisors" className="p-3">
+                <Link
+                  href="/author/advisors"
+                  className="p-3"
+                  onClick={() => setOpen(() => false)}
+                >
                   <FaRegUser className="text-[20px]" />
                 </Link>
               </Tooltip>
 
               <Tooltip placement="right" title={"Help"}>
-                <Link href="/author/help" className="p-3" title="Help">
+                <Link
+                  href="/author/help"
+                  className="p-3"
+                  title="Help"
+                  onClick={() => setOpen(() => false)}
+                >
                   <MdOutlineHelpOutline className="text-[22px]" />
                 </Link>
               </Tooltip>
@@ -132,7 +148,7 @@ const CommonSideBar = ({ setOpen, open, isDrawerTrue = false }: any) => {
                 <Link
                   href="/author/today"
                   className="flex items-center gap-3"
-                  onClick={() => setOpen((prev: any) => !prev)}
+                  onClick={() => setOpen(() => false)}
                 >
                   <FiFileText className="text-lg" />
                   <span>Today</span>
