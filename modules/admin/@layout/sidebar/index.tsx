@@ -53,9 +53,16 @@ const SideBar = () => {
 
   const text = <span>Title</span>;
 
+  const [isExpand, setIsExpand] = useState(false);
+
   return (
     <>
-      <CommonSideBar setOpen={setOpen} open={open} />
+      <CommonSideBar
+        setOpen={setOpen}
+        open={open}
+        setIsExpand={setIsExpand}
+        isExpand={isExpand}
+      />
       <Drawer
         title={
           <Link
@@ -76,7 +83,11 @@ const SideBar = () => {
         key={placement}
         className="immi_drawer"
       >
-        <CommonSideBar isDrawerTrue={true} />
+        <CommonSideBar
+          isDrawerTrue={true}
+          setIsExpand={setIsExpand}
+          isExpand={true}
+        />
       </Drawer>
     </>
   );

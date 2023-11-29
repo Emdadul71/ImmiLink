@@ -23,9 +23,13 @@ import { RiDiscussLine } from "react-icons/ri";
 import { usePathname } from "next/navigation";
 import ProfileDropdown from "@/modules/admin/@common/profileDropdown";
 
-const CommonSideBar = ({ setOpen, open, isDrawerTrue = false }: any) => {
-  const [isExpand, setIsExpand] = useState(false);
-
+const CommonSideBar = ({
+  setOpen,
+  open,
+  isDrawerTrue = false,
+  setIsExpand,
+  isExpand,
+}: any) => {
   return (
     <>
       <div
@@ -62,7 +66,7 @@ const CommonSideBar = ({ setOpen, open, isDrawerTrue = false }: any) => {
               <Link
                 href="#"
                 className="p-3"
-                onClick={() => setIsExpand((prev) => !prev)}
+                onClick={() => setIsExpand((prev: any) => !prev)}
               >
                 <FiSidebar className="text-xl" />
               </Link>
