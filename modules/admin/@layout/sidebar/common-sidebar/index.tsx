@@ -57,7 +57,7 @@ const CommonSideBar = ({ setOpen, open, isDrawerTrue = false }: any) => {
             />
           </Link>
 
-          <div className="flex flex-col justify-between px-3 py-3 h-[calc(100%-64px)] z-30 relative bg-white">
+          <div className="flex flex-col justify-between items-center px-3 py-3 h-[calc(100%-64px)] z-30 relative bg-white">
             <div className="flex justify-center items-center">
               <Link
                 href="#"
@@ -93,7 +93,7 @@ const CommonSideBar = ({ setOpen, open, isDrawerTrue = false }: any) => {
                 <Link
                   href="/author/today"
                   className="p-3"
-                  onClick={() => setIsExpand(() => false)}
+                  onClick={() => setIsExpand((prev: any) => !prev)}
                 >
                   <MdOutlineExplore className="text-[22px]" />
                 </Link>
